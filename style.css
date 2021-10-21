@@ -34,16 +34,21 @@ body {
 
 .main-container {
     grid-area: 1 / 1 / 5 / 2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 .main-container .profile {
-    height: 100%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: hsl(246, 80%, 60%);
     color: white;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
 }
 .profile-img {
     width: 3.5rem;
