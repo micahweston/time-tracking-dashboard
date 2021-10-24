@@ -13,8 +13,6 @@ body {
 }
 
 .container {
-  width: 80%;
-  height: 50%;
   display: grid;
   grid-template-columns: repeat(4, 1fr) 0fr;
   grid-template-rows: repeat(4, 1fr) 0fr;
@@ -23,13 +21,18 @@ body {
 }
 
 .card-container {
+    height: 15rem;
+    width: 15rem;
   display: flex;
   flex-direction: column;
   background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
   color: black;
 }
 
 .main-container {
+    height: 32rem;
+    width: 15rem;
     grid-area: 1 / 1 / 5 / 2;
     background-color: hsl(235, 46%, 20%);
     border-radius: 15px;
@@ -38,13 +41,34 @@ body {
 }
 
 .main-container .profile {
-    height: 80%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: hsl(246, 80%, 60%);
     color: white;
     border-radius: 15px;
+}
+
+.profile-title {
+    color: hsl(236, 100%, 87%);
+    margin: 2rem 0 0 2rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.profile-name {
+    margin: 0.25rem 2rem;
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.profile-img {
+    width: 3.5rem;
+    margin: 2rem;
+    border: .25rem white solid;
+    border-radius: 50%;
 }
 
 .main-container .selection {
@@ -54,14 +78,8 @@ body {
 }
 
 .main-container .selection span {
-    margin: 0.5rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 2rem;
     color: hsl(236, 100%, 87%);
-}
-
-.profile-img {
-    width: 3.5rem;
-    border: .25rem white solid;
-    border-radius: 50%;
 }
 
 .card-title {
@@ -94,5 +112,6 @@ body {
 }
 
 .attribution {
-  align-items: flex-end;
+  display: flex;
+  justify-self: end;
 }
